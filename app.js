@@ -69,7 +69,7 @@ app.get('/:phonenum/:message', (req, res) => {
 app.get('/whatsapp', (req, res) => {
     var source = req.header('user-agent');
     var ua = useragent.parse(source);
-    var phonenum = '0123456789';
+    var phonenum = '601126996051';
     
     if (ua.isDesktop) {
         res.status(308).redirect(`https://web.whatsapp.com/send?phone=+${phonenum}`);
